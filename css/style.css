@@ -1,8 +1,7 @@
 *{  margin: 0px;
     font: 18px/1.5 Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    
-   
+     
 }
 
 body{
@@ -104,7 +103,6 @@ header nav {
     float: right;
     margin-right: 10px;
     width: auto;
-    
     padding: 2px;
 }
 nav li:hover {
@@ -154,9 +152,8 @@ justify-content:center;
 align-items:center;
 
 }
-
+/* Formatierungen speziell Eingabeseite   */
 .schwimmtrupp {
-
 position: relative;
 display: inline-block;
 margin-bottom: 2vh
@@ -164,7 +161,6 @@ margin-bottom: 2vh
 }
 
 figure {
-
 margin: 15px 21px 15px 21px;
 position: relative;
 float: left;
@@ -179,5 +175,6 @@ figcaption {
     float: left;
     top: 0;
     position: absolute;
+    padding: 2px;
 
 }
