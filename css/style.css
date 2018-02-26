@@ -1,0 +1,183 @@
+*{  margin: 0px;
+    font: 18px/1.5 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+   
+}
+
+body{
+    
+text-align: center;
+
+margin: 0 auto;
+margin-top: 5px;
+background-color: lightblue;
+max-width: 1600px;
+min-width: 580px;
+}
+.container {
+    
+    text-align: left;
+    min-width: 748px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden; 
+    border-radius: 5px;
+    }
+    
+.bgimg{
+
+    background-image: url(../image/imheader.jpeg);
+    max-width: 100%;
+    
+}
+
+h1,h2, p, a {
+    color: honeydew;
+    background-color: rgba(27, 179, 206, 0.3);
+    text-decoration: none;
+}
+    
+
+.container li {
+    display: inline-block;
+    
+    width: auto;
+    min-width: 70px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: blue;
+    border-radius: 3px;
+    text-align: center;
+}
+
+header {
+    
+    
+    margin-left: 10px;
+    margin-bottom: 60px;
+    }
+    
+header h1 {
+    color: honeydew;
+    display: inline-block;
+    background-color: rgba(27, 179, 206, 0.4);
+    padding: 0px 5px;
+    border-radius: 3px;
+    font-weight: 700;
+    margin-top: 10px;
+    
+    font-size: 2em;
+        
+    }
+    
+header p {
+color: honeydew;
+display: inline-block;
+background-color: rgba(27, 179, 206, 0.4);
+padding: 0px 5px;
+border-radius: 3px;
+font-weight: 700;
+margin-top: 10px;
+font-size: 1em;
+        
+}
+  
+        
+a {
+    color: orange;
+    text-decoration: none;
+}                
+
+
+a:hover {
+    color: yellow;
+    padding: 2px;
+    transition-property: color;
+    transition-duration: .7s;
+}              
+    
+header nav { 
+    float: right;
+    margin-right: 10px;
+    width: auto;
+    
+    padding: 2px;
+}
+nav li:hover {
+    color: yellow;
+    background-color: red;
+    font-weight: bold;
+    transition-property: color background-color;
+    transition-duration: .5s;
+}
+
+.article01{
+    
+    color: rgb(37, 3, 9);
+    background-color: rgba(41, 152, 167,.75);
+    margin: 5px 10px 0px 10px;
+    border-radius: 3px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+    max-width: 1200px;
+   
+}
+.article01 h2{
+    font-size: 1.5rem;
+    color: #131212;
+
+}
+.iframe {
+
+padding: 20px 20px 20px 0px;
+
+
+}
+.box{
+/* width: 10vw ;
+height: 6vh ; */
+min-width: 5vw;
+border-radius: 4px;
+color: black;
+background-color: #000;
+text-align: center;
+vertical-align: center;
+overflow: hidden;
+padding: 2px;
+display: inline-block;
+justify-content:center;
+align-items:center;
+
+}
+
+.schwimmtrupp {
+
+position: relative;
+display: inline-block;
+margin-bottom: 2vh
+
+}
+
+figure {
+
+margin: 15px 21px 15px 21px;
+position: relative;
+float: left;
+height: 100px;
+overflow: hidden;
+}
+
+figcaption {
+    background-color: rgba(41, 152, 167,.4); 
+    color: rgb(8, 8, 8);
+    display: block;
+    float: left;
+    top: 0;
+    position: absolute;
+
+}
