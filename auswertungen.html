@@ -7,7 +7,8 @@
     <meta name="Author:" content="Christoph Ketzer">
     <meta name="twitter:" content="">
     <title>TS-Flussschwimmen</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
 
   </head>
   <body class="bgimg">
@@ -37,7 +38,7 @@
       <p> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio ullam dolore eligendi necessitatibus similique voluptatibus, voluptates, nam consectetur dolorem labore provident quaerat aliquam cum atque quod iure velit praesentium.
       </p>
-      <button id="myBtn">Fortschritt der Teams über Wochen</button>
+      <button id="myBtn">Aktueller Tabellenstand</button>
       
 
 
@@ -55,11 +56,18 @@
 
   <!-- Modal content -->
   <div class="modal-content">
+     <p>Aktueller Tabellenstand </p>
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <div style="clear:both"></div>
+     
+    <div >
+      <iframe width="675" height="170" seamless frameborder="2" scrolling="yes" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=524997309&amp;format=interactive"></iframe>
+    </div>
+  
   </div>
 
 </div>
+<script src="..\javascript\javascript.js"></script>
 </body>
 </html>
 

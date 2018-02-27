@@ -14,6 +14,12 @@ background-color: lightblue;
 max-width: 1600px;
 min-width: 580px;
 }
+.bgimg{
+    background-image: url(../image/imheader.jpeg);
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .container {
     
     text-align: left;
@@ -23,15 +29,10 @@ min-width: 580px;
     margin: 0 auto;
     overflow: hidden; 
     border-radius: 5px;
-    border: 3px rgb(37, 3, 9) dashed;
+    /* border: 3px rgb(37, 3, 9) dashed; */
     }
     
-.bgimg{
 
-    background-image: url(../image/imheader.jpeg);
-    max-width: 100%;
-    
-}
 
 h1,h2, p, a {
     color: honeydew;
@@ -59,7 +60,7 @@ header {
     margin-bottom: 60px;
     }
     
-header h1 {
+h1 {
     color: honeydew;
     display: inline-block;
     background-color: rgba(27, 179, 206, 0.4);
@@ -176,13 +177,16 @@ overflow: hidden;
 }
 
 figcaption {
-    background-color: rgba(41, 152, 167,.4); 
-    color: rgb(8, 8, 8);
+    background-color: rgba(41, 152, 167,.8); 
+    color: yellow;
     display: block;
-    float: left;
-    top: 0;
+    float: right;
+    bottom: 0;
+    right: 0;
     position: absolute;
     padding: 2px;
+    font-size: 12px;
+    font-weight: 700;
 
 }
 
@@ -191,31 +195,39 @@ figcaption {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    /* padding-top: 100px; Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    overflow: hidden; /* Disable scroll  */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    background-image: url(../image/imheader.jpeg);
+    border: 1px solid #888;
+   
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
+    display: block;
+    background-color: rgba(41, 152, 167,.4);
+    margin: 0 auto;
+    margin-top: 5% ;    
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    max-width: 1200px;
+    top: 50%;
 }
+
 
 /* The Close Button */
 .close {
+    position: relative;
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
+   
 }
 
 .close:hover,
@@ -223,4 +235,9 @@ figcaption {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+.modal p {
+    font-size: 36px;
+    float: left;
+    width: 95%;
 }
