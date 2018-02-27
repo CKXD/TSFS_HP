@@ -23,6 +23,7 @@ min-width: 580px;
     margin: 0 auto;
     overflow: hidden; 
     border-radius: 5px;
+    border: 3px rgb(37, 3, 9) dashed;
     }
     
 .bgimg{
@@ -55,8 +56,6 @@ h1,h2, p, a {
 
 header {
     
-    
-    margin-left: 10px;
     margin-bottom: 60px;
     }
     
@@ -68,7 +67,6 @@ header h1 {
     border-radius: 3px;
     font-weight: 700;
     margin-top: 10px;
-    
     font-size: 2em;
         
     }
@@ -84,8 +82,18 @@ margin-top: 10px;
 font-size: 1em;
         
 }
-  
-        
+footer {
+    color: honeydew;
+    display: block;
+    background-color: rgba(27, 179, 206, 0.4);
+    padding: 5px 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 3px;
+    margin: 0 auto;
+   
+}        
 a {
     color: orange;
     text-decoration: none;
@@ -101,7 +109,6 @@ a:hover {
     
 header nav { 
     float: right;
-    margin-right: 10px;
     width: auto;
     padding: 2px;
 }
@@ -117,7 +124,7 @@ nav li:hover {
     
     color: rgb(37, 3, 9);
     background-color: rgba(41, 152, 167,.75);
-    margin: 5px 10px 0px 10px;
+    margin: 5px 0px 0px 0px;
     border-radius: 3px;
     padding-left: 30px;
     padding-right: 30px;
