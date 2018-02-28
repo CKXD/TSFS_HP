@@ -25,9 +25,9 @@
             <li><a href="regelwerk.html">Regelwerk</a></li>
             <li><a href="eingabe.html">Eingabe</a></li>
             <li><a href="auswertungen.html">Auswertungen</a></li> 
-            <li><a href="http://">Flussmeisterschaften</a></li>
-            <li><a href="http://">Monatscode</a></li>
-            <li><a href="http://">Karte</a></li>
+            <li><a href="construction.html">Flussmeisterschaften</a></li>
+            <li><a href="construction.html">Monatscode</a></li>
+            <li><a href="construction.html">Karte</a></li>
           </ul>
         </nav>
         
@@ -38,8 +38,8 @@
       <p> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio ullam dolore eligendi necessitatibus similique voluptatibus, voluptates, nam consectetur dolorem labore provident quaerat aliquam cum atque quod iure velit praesentium.
       </p>
-      <button id="myBtn">Aktueller Tabellenstand</button>
-      
+      <div class ="button" id="myBtn">Aktueller Tabellenstand</div>
+      <div class ="button" id="myBtn2">Schwimmleistung innerhalb Schwimmtrupp</div>
 
 
  
@@ -52,12 +52,12 @@
 
 </div>
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal1" class="modal">
 
   <!-- Modal content -->
   <div class="modal-content">
      <p>Aktueller Tabellenstand </p>
-    <span class="close">&times;</span>
+    <span class="close" id="close">&times;</span>
     <div style="clear:both"></div>
      
     <div >
@@ -67,7 +67,72 @@
   </div>
 
 </div>
-<script src="..\javascript\javascript.js"></script>
+<!-- The Modal2 -->
+<div id="myModal2" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     <p>Schwimmleistung innerhalb Schwimmtrupp </p>
+    <span class="close" id="close1">&times;</span>
+    <div style="clear:both"></div>
+     
+<!-- iframe container -->
+<div class="iframe-container">
+
+  <!-- iframes width 848 height 524 centered -->
+  <div class="myiframes">
+        <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=161645661&amp;format=interactive"></iframe>
+  </div>
+  <div class="myiframes">
+    <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=1260229308&amp;format=interactive"></iframe>
+   </div>
+  <div class="myiframes">
+       <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=947862118&amp;format=interactive"></iframe>
+  </div> 
+  
+  <div class="myiframes">
+    <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=1260229308&amp;format=interactive"></iframe>
+</div>
+  <div class="myiframes">
+    <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=919422046&amp;format=interactive"></iframe>
+    
+   
+</div>
+  
+
+  
+  <div class="myiframes">
+       <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=223234082&amp;format=interactive"></iframe>
+  </div> 
+  <div class="myiframes">
+       <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=1257645948&amp;format=interactive"></iframe>
+  </div>
+  <div class="myiframes">
+       <iframe width="848" height="524" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTU_rYkpCKsdSbpp5ps0ka2hNYZmi8RYWGAggRmzAbjufy3ppESaS6OCiBpSzUcdW5tTCK8zdoiKYxm/pubchart?oid=302157532&amp;format=interactive"></iframe>
+  </div>
+ <!-- Next and previous buttons -->
+ <a class="next" onclick="plusSlides(1)">&#10095;</a>
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+</div>
+  
+  
+
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+ 
+</div>
+
+</div>
+<script src="..\javascript\javascript.js" defer></script>
 </body>
 </html>
 
