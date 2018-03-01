@@ -3,7 +3,12 @@
     box-sizing: border-box;
      
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin: 10px;
+}
 body{
     
 text-align: center;
