@@ -1,4 +1,4 @@
-*{  margin: 0px;
+﻿*{  margin: 0px;
     font: 18px/1.5 Arial, Helvetica, sans-serif;
     box-sizing: border-box;
      
@@ -207,10 +207,10 @@ figcaption {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: hidden; /* Disable scroll  */
+    overflow: auto; /* enable scroll  */
     background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
     background-image: url(../image/imheader.jpeg);
-    border: 1px solid #888;
+    
     
 }
 
@@ -219,12 +219,14 @@ figcaption {
     display: block;
     background-color: rgba(41, 152, 167,.4);
     margin: 0 auto;
-    margin-top: 5% ;    
+    margin-top: 2% ;    
     padding: 20px;
     /* border: 1px solid #888; */
     max-width: 1200px;
     top: 50%;
     border-radius: 5px;
+    overflow: auto;
+    /* border: 5px solid #888; */
 }
 
 
