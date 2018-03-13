@@ -36,6 +36,9 @@ window.onclick = function(event) {
     else if(event.target == modal5){
         modal5.style.display = "none";
     }
+    else if(event.target == modal6){
+        modal6.style.display = "none";
+    }
 }
 
 // Get the modal2
@@ -150,3 +153,37 @@ btn5.onclick = function() {
 span5.onclick = function() {
     modal5.style.display = "none";
 }
+// Get the modal6
+var modal6 = document.getElementById('myModal6');
+
+// Get the button that opens the modal
+var btn6 = document.getElementById("myBtn6");
+
+// Get the <span> element that closes the modal
+var span6 = document.getElementById("close6");
+
+// When the user clicks the button, open the modal 
+btn6.onclick = function() {
+    modal6.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span6.onclick = function() {
+    modal6.style.display = "none";
+}
+
+
+// Google-Map Karte initialisieren
+
+function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 11,
+      center: {lat: 47.569, lng:8.355 }
+      
+    });
+
+    var ctaLayer = new google.maps.KmlLayer({
+      url: 'http://tsfs.trivegta.de/fluss.kml',
+      map: map
+    });
+  }
