@@ -8,7 +8,6 @@
     <meta name="twitter:" content="">
     <title>TS-Flussschwimmen</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="..\javascript\karte.js" ></script>
   
   </head>
   <body class="bgimg">
@@ -16,7 +15,7 @@
       <header >
           <h1>TS-Flussschwimmen</h1>
           <div>
-          <p>Eine auf Vertrauen und Ehrlichkeit bassierende Schwimmschlacht auf <a href="http://www.triathlon-szene.de/" target="_blank"> Triathlon-Szene.de </a></p>
+          <p>Eine auf Vertrauen und Ehrlichkeit basierende Schwimmschlacht auf <a href="http://www.triathlon-szene.de/" target="_blank"> Triathlon-Szene.de </a></p>
           </div>
           
           <nav>
@@ -28,25 +27,47 @@
               <li><a href="flussmeisterschaft.html">Flussmeisterschaften</a></li>
               <li><a href="monatscode.html">Monatscode</a></li>
               <li><a href="karte.html">Karte</a></li>
-            <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
-            <!-- <button id="signout-button" onclick="handleSignOutClick()">Sign out</button> -->
-          </ul>
-            
+            </ul>
           </nav>
           
       </header>
-      
    </div>
 
     <div id="map"></div>
     
-    <script defer src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeVkY1hV6KQQLUWdYgY09bdkXp44NkEuA&callback=initMap">
-    </script>
+    <script>
+
+      function initMap() {
+        var myLatLng = {lat: 49.99262224521367, lng: 7.862630193466008};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: {lat: 47.5, lng: 9.75 }
+        });
+
+        var ctaLayer = new google.maps.KmlLayer({
+          url: 'http://tsfs.trivegta.de/Flussschwimmenv2.kml',
+          map: map
+        });
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          label: '40km',
+          title: 'Start!',
+          
+        });
+        console.log(ctaLayer);
+      }
+
+     
     
-    
+    </script>
+   
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeVkY1hV6KQQLUWdYgY09bdkXp44NkEuA&callback=initMap">
+
+   
+    createMarker(ctaLayer.GetPointAtDistance(100000),"9.5km","9.5km");
+
+    </script>
   </body>
 </html>

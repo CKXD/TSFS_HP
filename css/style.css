@@ -345,14 +345,10 @@ figcaption {
     
     
   } 
-/* 
-  #map {
-    position:absolute;
-    margin: 250 auto;
-    height: 70%;
-    width: 70%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  #signout-button {
+    display: none;
     
-  }  */
+    
+    
+  } 
