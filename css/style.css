@@ -29,7 +29,7 @@ min-width: 580px;
 .container {
     
     text-align: left;
-    min-width: 748px;
+    min-width: 781px;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -346,7 +346,7 @@ figcaption {
     
   } 
 
-  #signout-button {
+  #signin-button {
     display: none;
     
     

@@ -1,5 +1,5 @@
 "use strict";
-var sk = [];
+var sk = []; // global array to store the data from the gsheet
 
 function initMap() {
     
@@ -118,7 +118,7 @@ let coordinates = [
       // TODO: Change code below to process the `response` object:
       
       sk = response.result.values; // Array zu Weiterverarbeitung des Request
-      initMap();
+      initMap(); // initialize the map after the data were fetched fron the gsheet
        
 
     }, function(reason) {
