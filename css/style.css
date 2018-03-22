@@ -146,11 +146,20 @@ nav li:hover {
     max-width: 1200px;
    
 }
-.article01 h2{
+.article01 h2,h3,h4 {
     font-size: 1.5rem;
     color: #131212;
-
+    
 }
+
+.article01 li{
+    text-align: left;
+    width: 100%; 
+    background-color: rgba(27, 179, 206, 0.3);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .iframe {
 
 padding: 20px 20px 20px 0px;
