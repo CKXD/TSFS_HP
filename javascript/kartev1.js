@@ -127,7 +127,7 @@ let coordinates = [
   }
 
   function initClient() {
-    var API_KEY = 'AIzaSyB3m6acnaJt5qDgymhVdv8xjwGitc4qf7E';  // TODO: Update placeholder with desired API key.
+    var API_KEY = 'yourAPIKey';  // TODO: Update placeholder with desired API key.
 
     var CLIENT_ID = '262776010726-1epq4242i6jmkavcuoj5grs9shg5i7bp.apps.googleusercontent.com';  // TODO: Update placeholder with desired client ID.
 
