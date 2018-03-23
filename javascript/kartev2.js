@@ -156,7 +156,7 @@ function makeApiCall() {
   }
     
     function start() {
-      var API_KEY = 'AIzaSyB3m6acnaJt5qDgymhVdv8xjwGitc4qf7E';
+      var API_KEY = 'yourAPIKey';
       var CLIENT_ID = '262776010726-1epq4242i6jmkavcuoj5grs9shg5i7bp.apps.googleusercontent.com';
       var SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
       // Initializes the client with the API key and the Translate API.
